@@ -1,0 +1,38 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .: {}
+
+  packages/app:
+    dependencies:
+      lib-a:
+        specifier: workspace:*
+        version: link:../lib-a
+      lib-b:
+        specifier: workspace:*
+        version: link:../lib-b
+
+  packages/lib-a: {}
+
+  packages/lib-b:
+    dependencies:
+      lib-a:
+        specifier: workspace:*
+        version: link:../lib-a
+      lodash:
+        specifier: ^4.17.21
+        version: 4.17.21
+
+packages:
+
+  lodash@4.17.21:
+    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
+
+snapshots:
+
+  lodash@4.17.21: {}

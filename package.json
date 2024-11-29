@@ -1,0 +1,8 @@
+{
+    "name": "pnpm-workspaces-demo",
+    "private": true,
+    "version": "1.0.0",
+    "description": "Sample PNPM project with workspaces",
+    "workspaces": [
+    ]
+  }

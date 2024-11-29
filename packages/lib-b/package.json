@@ -1,0 +1,14 @@
+{
+    "name": "lib-b",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+      "build": "echo Building lib-b",
+      "test": "echo Testing lib-b"
+    },
+    "dependencies": {
+      "lodash": "^4.17.21",
+      "lib-a": "workspace:*"
+    }
+  }
+  
