@@ -7,8 +7,7 @@
       "test": "echo Testing lib-b"
     },
     "dependencies": {
-      "lodash": "^4.17.21",
-      "lib-a": "workspace:*"
+      "serialize-javascript": "1.7.0"
     }
   }
   
