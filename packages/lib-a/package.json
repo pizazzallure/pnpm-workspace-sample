@@ -4,5 +4,9 @@
     "main": "index.js",
     "scripts": {
       "build": "echo Building lib-a"
+    },
+    "dependencies": {
+      "axios": "0.21.1",
+      "growl": "1.9.2"
     }
   }

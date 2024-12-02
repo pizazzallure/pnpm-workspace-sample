@@ -4,5 +4,8 @@
     "version": "1.0.0",
     "description": "Sample PNPM project with workspaces",
     "workspaces": [
-    ]
+    ],
+    "dependencies": {
+        "lodash": "4.17.21"
+    }
   }
