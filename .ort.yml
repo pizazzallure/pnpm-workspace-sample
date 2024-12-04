@@ -2,6 +2,26 @@ analyzer:
   skip_excluded: true
 excludes:
   paths: 
-  - pattern: "packages/package-a"
+  - pattern: "packages/lib-b"
     reason: "TEST_OF"
     comment: "Github Action Definitions"
+  - pattern: "ort/*"
+    reason: "TEST_OF"
+    comment: "Github Action Definitions"
+  scopes:
+  - pattern: "(test.*|funTest.*)"
+    reason: "TEST_DEPENDENCY_OF"
+    comment: >-
+      Packages for testing only. Not part of released artifacts.
+  - pattern: "devDependencies"
+    reason: "DEV_DEPENDENCY_OF"
+    comment: >-
+      Packages for development only. Not part of released artifacts.
+  - pattern: "dokka.*"
+    reason: "BUILD_DEPENDENCY_OF"
+    comment: >-
+      Packages for the Dokka documentation engine.
+  - pattern: "graphql.*"
+    reason: "BUILD_DEPENDENCY_OF"
+    comment: >-
+      Packages for the generation of GraphQL clients by the GraphQL Kotlin build plugin.
