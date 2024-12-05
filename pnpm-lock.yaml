@@ -14,10 +14,10 @@ importers:
 
   packages/app:
     dependencies:
-      lib-a:
+      '@scope/lib-a':
         specifier: workspace:*
         version: link:../lib-a
-      lib-b:
+      '@scope/lib-b':
         specifier: workspace:*
         version: link:../lib-b
       xmlbuilder:

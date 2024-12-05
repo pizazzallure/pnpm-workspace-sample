@@ -1,13 +1,13 @@
 {
-    "name": "app",
+    "name": "@scope/app",
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
       "start": "node index.js"
     },
     "dependencies": {
-      "lib-a": "workspace:*",
-      "lib-b": "workspace:*",
+      "@scope/lib-a": "workspace:*",
+      "@scope/lib-b": "workspace:*",
       "xmlbuilder": "~11.0.0"
     }
   }
