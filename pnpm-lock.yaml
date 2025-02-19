@@ -35,6 +35,10 @@ importers:
       growl:
         specifier: 1.9.2
         version: 1.9.2
+    devDependencies:
+      prettier:
+        specifier: '*'
+        version: 3.5.1
 
   packages/lib-b:
     dependencies:
@@ -62,6 +66,11 @@ packages:
   lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
 
+  prettier@3.5.1:
+    resolution: {integrity: sha512-hPpFQvHwL3Qv5AdRvBFMhnKo4tYxp0ReXiPn2bxkiohEX6mBeBwEpBSQTkD458RaaDKQMYSp4hX4UtfUTA5wDw==}
+    engines: {node: '>=14'}
+    hasBin: true
+
   serialize-javascript@1.7.0:
     resolution: {integrity: sha512-ke8UG8ulpFOxO8f8gRYabHQe/ZntKlcig2Mp+8+URDP1D8vJZ0KUt7LYo07q25Z/+JVSgpr/cui9PIp5H6/+nA==}
 
@@ -82,6 +91,8 @@ snapshots:
   growl@1.9.2: {}
 
   lodash@4.17.21: {}
+
+  prettier@3.5.1: {}
 
   serialize-javascript@1.7.0: {}
 
