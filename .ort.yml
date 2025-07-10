@@ -2,7 +2,10 @@ analyzer:
   skip_excluded: true
 excludes:
   paths: 
-  - pattern: "packages/lib-b"
+  - pattern: "packages/*"
+    reason: "TEST_OF"
+    comment: "Github Action Definitions"
+  - pattern: "package-c"
     reason: "TEST_OF"
     comment: "Github Action Definitions"
   - pattern: "ort/*"

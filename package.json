@@ -7,7 +7,6 @@
     "workspaces": [
     ],
     "dependencies": {
-        "@scope/app": "workspace:*",
         "lodash": "4.17.21",
         "react-hook-form": "7.54.2"
     }
