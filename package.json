@@ -3,7 +3,7 @@
     "private": true,
     "version": "1.0.0",
     "description": "Sample PNPM project with workspaces",
-    "packageManager": "pnpm@10.12.4",
+    "packageManager": "pnpm@10.12.1",
     "workspaces": [
     ],
     "dependencies": {
