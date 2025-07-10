@@ -1,13 +1,36 @@
 {
-    "name": "pnpm-workspaces-demo",
-    "private": true,
-    "version": "1.0.0",
-    "description": "Sample PNPM project with workspaces",
-    "packageManager": "pnpm@10.12.1",
-    "workspaces": [
-    ],
-    "dependencies": {
-        "lodash": "4.17.21",
-        "react-hook-form": "7.54.2"
-    }
+  "name": "pnpm-workspaces-demo",
+  "private": true,
+  "license": "UNLICENSED",
+  "packageManager": "pnpm@10.12.1",
+  "scripts": {
+    "build": "pnpm run -r build",
+    "dev": "pnpm run -r dev",
+    "format": "prettier --write \"**/*.{yml,ts,tsx,md,js,mjs,json}\" && pnpm run -r format",
+    "format:check": "prettier --check \"**/*.{yml,ts,tsx,md,js,mjs,json}\" && pnpm run -r format:check",
+    "generate": "pnpm --filter purchase-request-service generate && pnpm --filter customer-app-prs-client generate && pnpm --filter feedback-service-client generate && pnpm --filter dealer-prs-api-client generate && pnpm format",
+    "intl:flow:customerApp": "pnpm --filter customer-app intl:flow",
+    "intl:flow:dealerFrontend": "pnpm --filter dealer-frontend intl:flow",
+    "lint": "pnpm run --workspace-concurrency 1 -r lint",
+    "lint:fix": "pnpm run -r lint:fix",
+    "storybook": "pnpm run -r storybook",
+    "test": "pnpm run -r test"
+  },
+  "dependencies": {
+    "lodash": "4.17.21",
+    "react-hook-form": "7.54.2"
+  },
+  "devDependencies": {},
+  "pnpm": {
+    "overrides": {
+      "eslint": "~9.19.0",
+      "axios": "^1.7.9"
+    },
+    "onlyBuiltDependencies": [
+      "eslint"
+    ]
+  },
+  "engines": {
+    "node": ">= 20.11"
   }
+}

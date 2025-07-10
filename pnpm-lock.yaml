@@ -4,6 +4,10 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  eslint: ~9.19.0
+  axios: ^1.7.9
+
 importers:
 
   .:
