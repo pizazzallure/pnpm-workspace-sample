@@ -1,0 +1,10 @@
+{
+  "name": "package-c",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "marked": "0.3.6",
+    "growl": "1.9.2",
+    "axios": "0.21.1"
+  }
+}
