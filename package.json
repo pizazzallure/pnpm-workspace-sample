@@ -2,7 +2,7 @@
   "name": "pnpm-workspaces-demo",
   "private": true,
   "license": "UNLICENSED",
-  "packageManager": "pnpm@10.12.1",
+  "packageManager": "pnpm@9.9.0",
   "scripts": {
     "build": "pnpm run -r build",
     "dev": "pnpm run -r dev",
@@ -16,7 +16,8 @@
     "storybook": "pnpm run -r storybook",
     "test": "pnpm run -r test"
   },
-  "dependencies": {
+  "dependencies": {        
+    "@scope/app": "workspace:*",
     "lodash": "4.17.21",
     "react-hook-form": "7.54.2"
   },

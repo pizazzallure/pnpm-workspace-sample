@@ -6,6 +6,7 @@
       "build": "echo Building lib-a"
     },
     "dependencies": {
+      "@scope/lib-b": "workspace:*",
       "axios": "0.21.1",
       "growl": "1.9.2"
     },

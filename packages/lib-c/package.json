@@ -1,0 +1,13 @@
+{
+    "name": "@scope/lib-c",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+      "build": "echo Building lib-b",
+      "test": "echo Testing lib-b"
+    },
+    "dependencies": {
+      "serialize-javascript": "1.7.0"
+    }
+  }
+  

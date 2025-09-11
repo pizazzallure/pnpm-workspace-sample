@@ -8,6 +8,7 @@
     "dependencies": {
       "@scope/lib-a": "workspace:*",
       "@scope/lib-b": "workspace:*",
+      "@scope/lib-c": "workspace:*",
       "xmlbuilder": "~11.0.0"
     }
   }
