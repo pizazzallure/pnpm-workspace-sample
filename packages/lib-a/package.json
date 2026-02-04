@@ -11,6 +11,6 @@
       "growl": "1.9.2"
     },
     "devDependencies": {
-      "prettier": "*"
+      "concat-stream": "^2.0.0"
     }
   }

@@ -8,6 +8,9 @@
     },
     "dependencies": {
       "serialize-javascript": "1.7.0"
+    },
+    "devDependencies": {
+      "concat-stream": "^2.0.0"
     }
   }
   
